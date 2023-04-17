@@ -1,0 +1,25 @@
+@mixin button($whiteColor,$bgc,$brRadius,$hover){
+    background-color: $bgc;
+    color: $whiteColor;
+    border-radius: $brRadius;
+    &:hover{
+        background-color: $hover;
+    }
+    
+
+}
+@mixin for-phone {
+    @media (max-width: $phone-breakpoint) { @content; }
+  }
+  @mixin for-tablet {
+    @media (max-width: $desktop-breakpoint) { @content; }
+  }
+  @mixin for-laptop {
+    @media (max-width: $desktop-breakpoint) and (min-width: $tablet-breakpoint) { @content; }
+  }
+  @mixin for-large-desktop {
+    @media (max-width: $large-desktop-breakpoint) and (min-width: $desktop-breakpoint) { @content; }
+  }
+  @mixin for-xxl-large-desktop {
+    @media (min-width: $xxl-large-desktop-breakpoint) { @content; }
+  }

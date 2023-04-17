@@ -1,0 +1,111 @@
+.header{
+    width: 100%;
+   
+    
+    z-index: 999;
+    position: sticky;
+    top: 0;
+   
+    
+
+  
+    
+}
+.content{
+ 
+    @extend %center-div;
+    justify-content: space-between;
+    
+    width: 95%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+.icon{
+    background-color:$blueColor ;
+    color: $whiteColor;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    @extend %center-div;
+    justify-content: center;
+      margin-right: 10px;
+
+    
+}
+
+
+
+
+
+
+ul{
+    display: flex;
+    @include for-phone{
+        display: none; 
+    }
+    @include for-tablet{
+        display: none; 
+    }
+    @include for-laptop{
+        display: none; 
+    }
+    @include for-large-desktop{
+        display: none;
+    }
+}
+li{
+    display: flex;
+
+   margin-left: 60px;
+}
+.right{
+ @include for-phone{
+    display: block;
+ }
+ @include for-tablet{
+    display: block; 
+}
+@include for-laptop{
+    display: block; 
+}
+@include for-large-desktop{
+    display: block;
+}
+   display: none;
+}
+.down{
+   @include for-phone{
+    display: none;
+   }
+   @include for-tablet{
+    display: none; 
+}
+@include for-laptop{
+    display: none; 
+}
+@include for-large-desktop{
+    display: none;
+}
+    z-index: 999;
+    width: 100%;
+    padding: 20px 0;
+   background-color: $blueColor;
+   @extend %center-div;
+   justify-content: center;
+   
+}
+.link{
+    @extend %center-div;
+    
+}
+.link .pink{
+    margin-left: 40px;
+    
+    
+}
+
+.pink a{
+  
+    color: $whiteColor;
+    font-size: 22px;
+}
