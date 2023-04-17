@@ -1,0 +1,168 @@
+.hip
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid $footorColors;
+   
+}
+.hip:hover{
+    background-color:$blueColor;
+}
+.carousel{
+  
+    width: 100%;
+    height: 700px;
+     
+ }
+ .img-1{
+    width: 100%;
+    height: 700px;
+    
+    background-size: cover;
+    background-image: url(https://preview.colorlib.com/theme/waterboat/images/hero_1.jpg.webp);
+    @include for-tablet{
+        width: 100%;
+        height: 700px;
+    }
+    @include for-tablet{
+        width: 100%;
+        height: 700px;
+    }
+    @include for-laptop{
+        width: 100%;
+        height: 700px;
+    }
+    @include for-large-desktop{
+        width: 100%;
+        height: 700px;
+    }
+}
+.img-1::before{
+    content: "";
+    position: absolute;
+    display: block;
+    height: 700px;
+    width: 100%;
+     z-index: 1;
+     background-color: $imgColor1;
+    
+   
+  
+   
+   
+
+}
+.img-2::before{
+    content: "";
+    position: absolute;
+    display: block;
+    height: 700px;
+    width: 100%;
+     z-index: 1;
+     background-color:$imgColor1;
+    
+   
+  
+   
+   
+
+}
+.img-2{
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+   background-image: url(https://preview.colorlib.com/theme/waterboat/images/hero_2.jpg.webp);
+   @include for-tablet{
+    width: 100%;
+    height: 700px;
+}
+@include for-tablet{
+    width: 100%;
+    height: 700px;
+}
+@include for-laptop{
+    width: 100%;
+    height: 700px;
+}
+@include for-large-desktop{
+    width: 100%;
+    height: 700px;
+}
+}
+.center-1{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    height: 700px;
+    h1{
+        color: $whiteColor;
+        font-weight: 700;
+        z-index: 9;
+        opacity: 1;
+    }
+    .conver{
+        color:$whiteColor;
+       
+        z-index: 9;
+        opacity: 1;
+    }
+
+}
+ .center-1 p:nth-child(3)
+ { 
+    z-index: 9;
+    opacity: 1;
+
+    color: $whiteColor;
+  
+ }
+ 
+
+
+.conver{
+    width: 40%;
+ 
+}
+
+.center-1 a{
+    
+    display: flex;
+    align-items: flex-end;
+}
+.center{
+   @extend %center-div;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 700px;
+    h1{
+        color: $whiteColor;
+        font-weight: 700;
+        z-index: 9;
+        opacity: 1;
+    }
+    .conver{
+        color: $whiteColor;
+       
+        z-index: 9;
+        opacity: 1;
+    }
+ 
+   
+}   
+.center p:nth-child(3){
+        color: $whiteColor;
+       
+        z-index: 9;
+        opacity: 1;
+}
+p{
+    button{
+        padding: 15px 50px;
+        @include button($whiteColor,#1089FF,5px,#0076E9);
+        border: none;
+    }
+}
