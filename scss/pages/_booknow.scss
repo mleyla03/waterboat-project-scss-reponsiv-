@@ -1,0 +1,20 @@
+.book-now{
+    margin-top: 120px;
+    .col-md-5{
+        span{
+            color:$blueColor;
+            font-family: 'Dancing Script', cursive;
+            font-size: 24px;
+        }
+        h3{
+            color:$blackColor;
+        }
+    }
+}
+input[type|=submit]{
+    border:none;
+   
+    padding: 20px 40px;
+   @include button($whiteColor,#1089FF,5px,#0076E9);
+    
+}
