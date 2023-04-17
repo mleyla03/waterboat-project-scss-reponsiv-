@@ -1,0 +1,46 @@
+.blog{
+  
+
+    margin-top:120px;
+    
+.blog-about{
+    background:$whiteColor;
+    box-shadow: 0 0 30px -5px $imgColor1;
+  }
+   .col-md-7{
+    margin: 100px 0;
+     h3{
+     text-align: center;
+     color: $blackColor;
+   }
+   span{
+    color: $blue1Color;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 600;
+    font-size: 24px;
+   }
+   }
+   .content-one{
+    padding: 25px;
+    h3{ a{
+        color: $blackColor;
+        font-size: 16px;
+        i{
+            color: $blue1Color;
+        }
+    }
+  
+        
+    }
+   }
+}
+  .price{
+  
+        span{  
+            padding:7px 20px;
+            border-radius: 5px;
+            background-color:#1089FF;
+            color: white;
+        }
+        
+}
